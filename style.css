@@ -4,7 +4,35 @@
     box-sizing: border-box;
 }
 
-#logoimg > img{
-    width: 500px;
+.banner{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image : linear-gradient(rgb(100, 70, 80), rgba(250, 190, 100, 0.1)), url("../OpFlix-sprint-3/img/banner1.jpg");
+    /* background-image: url("../OpFlix-sprint-3/img/banner1.jpg"); */
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.9;
+}
 
+#opfliximg {
+    width: 27em;
+    height: 12em;
+}
+
+#cadastro{
+    background-color: red;
+    
+}
+
+#login-usuario{
+    background-color: red;
+      
+}
+
+a {
+    text-decoration: none;
 }
