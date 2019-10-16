@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image : linear-gradient(rgb(100, 70, 80), rgba(250, 190, 100, 0.1)), url("../OpFlix-sprint-3/img/banner1.jpg");
+    background-image : linear-gradient(rgb(100, 70, 80), rgba(250, 190, 100, 0.1)), url("../img/banner1.jpg");
     /* background-image: url("../OpFlix-sprint-3/img/banner1.jpg"); */
     background-size: cover;
     background-position: center top;
@@ -24,15 +24,28 @@
 }
 
 #cadastro{
-    background-color: red;
-    
+    list-style-type: none;
+    font-size: 1.3em;
 }
 
-#login-usuario{
-    background-color: red;
-      
+#login-usuario{ 
+    list-style-type: none;
+    font-size: 1.3em;
 }
 
 a {
     text-decoration: none;
+    font-family: 'Arial Narrow';
+}
+
+#menu1{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #e23d3d;
+    font-weight: 600;
+    font-family: 'Arial Narrow';
+}
+
+ul > li {
+    list-style-type: none;
 }
