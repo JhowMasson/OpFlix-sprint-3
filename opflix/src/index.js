@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 import App from './pages/Home/App';
-// import Login from './pages/Login/Login';
+import Login from './pages/Login/Login';
 // import Lancamento from './pages/Lancamento/Lancamento';
 
 
@@ -35,7 +35,7 @@ const routing = (
         <div>
             <Switch>
                 <Route exact path='/' component={App} />
-                {/* <Route path='/login' component={Login}/> */}
+                <Route path='/login' component={Login}/>
                 {/* <RotaPrivada path='/lancamentos' component={Lancamento}/> */}
 
             </Switch>
