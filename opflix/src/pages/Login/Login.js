@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 
 import logo from '../../assets/img/imagem-opflix.png';
 
+import {Link} from 'react-router-dom';
 import Axios from 'axios';
 
 class Login extends Component{
@@ -15,7 +16,7 @@ class Login extends Component{
     }
 
     atualizaEstadoEmail = (event) =>{
-        this.setState({emial: event.target.value});
+        this.setState({email: event.target.value});
     }
 
     atualizaEstadoSenha = (event) =>{
@@ -25,7 +26,7 @@ class Login extends Component{
     efetuarLogin = (event) =>{
         event.preventDefault();
 
-        Axios.post("http://localhost:5000/login", {
+        Axios.post("http://localhost:5000/api/login", {
             email: this.state.email,
             senha: this.state.senha
         })
@@ -33,13 +34,13 @@ class Login extends Component{
                 if(response.status === 200){
                     console.log(response.data.token);
                     localStorage.setItem("usuario-opflix", response.data.token);
-                    this.props.history.push('/');
+                    this.props.history.push('/lancamentos');
                 }else{
                     console.log('Algo deu errado');
                 }
             })
             .catch(erro => {
-                this.setItem({ erro: "Usuário ou senha estão inválidos"});
+                this.setState({ erro: "*Usuário ou senha estão inválidos*"});
                 console.log(erro);
             });
     }
@@ -51,22 +52,22 @@ class Login extends Component{
             <div className="item__login">
                 <div className="row">
                 <div className="item">
-                    <img id="opfliximg" src={logo} />
+                    <Link to="/"><img id="opfliximg" src={logo}/></Link>
                 </div>
                 <div className="item" id="item__title">
-                    <p className="text__login" id="item__description">
+                    <p id="introducao-login">
                     Bem-vindo! Faça login para acessar sua conta.
                     </p>
                 </div>
                 <form onSubmit={this.efetuarLogin}>
-                    <div className="item">
+                    <div className="item-login">
                     <input
-                        className="input__login"
-                        placeholder="username"
-                        onInput={this.atualizaEstadoEmail}
+                        className="login_usuario"
+                        placeholder="usuario"
+                        onChange={this.atualizaEstadoEmail}
                         type="text"
                         name="username"
-                        id="login__email"
+                        id="login-email"
                     />
                     <p 
                         className="text__login"
@@ -75,14 +76,14 @@ class Login extends Component{
                         {this.state.erro}
                     </p>
                     </div>
-                    <div className="item">
+                    <div className="item-login">
                     <input
-                        className="input__login"
+                        className="login_usuario"
                         onInput={this.atualizaEstadoSenha}
-                        placeholder="password"
+                        placeholder="senha"
                         type="password"
                         name="password"
-                        id="login__password"
+                        id="login-senha"
                     />
                     </div>
                     <div className="item">

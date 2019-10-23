@@ -4,6 +4,7 @@ import './App.css';
 
 //import do CSS
 import '../../assets/CSS/style.css';
+import '../../assets/CSS/login.css';
 
 //import da imagem
 import logo from  '../../assets/img/imagem-opflix.png';
@@ -32,7 +33,7 @@ function App() {
   <div>
     <ul>
       <li className="nav-item">
-        <a id="login-usuario" href="#">Login</a>
+        <a id="login-usuario" href="/login">Login</a>
       </li>
     </ul>
   </div>
@@ -40,7 +41,7 @@ function App() {
 
   <section className="banner">
     
-    <img id="opfliximg" src={logo} />
+    <img id="opfliximg" href="#" src={logo} />
 
   </section>
 
@@ -48,7 +49,7 @@ function App() {
   
   <section>
     <nav id="cabecalhoPrincipal-nav">
-      <a class= "menu-design" href= "#">Principais Lançamentos</a>
+      <a class= "menu-design" href= "/lancamentos">Principais Lançamentos</a>
       <a class= "menu-design" href= "#">O Que Fazemos ?</a>
       <a class= "menu-design" href= "#">Quem Somos ?</a>
       <a class= "menu-design" href= "#">Contato</a>
@@ -58,7 +59,7 @@ function App() {
   <section className="menu-nav">
 
  
-
+{/* 
   <section className="fundo-tela">
   <main class="conteudoPrincipal">
     <section class="conteudoPrincipal-cadastro">
@@ -69,11 +70,13 @@ function App() {
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Nome Filme</th>
+                        <th>Nome</th>
                         <th>Sinopse</th>
                         <th>Genero</th>
+                        <th>Categoria</th>
+                        <th>Tempo de Duração</th>
                         <th>Data Lancamento</th>
-                        <th>Ação</th>
+                        <th></th>
                     </tr>
                 </thead>
 
@@ -85,8 +88,8 @@ function App() {
                         <td>ADMINISTRADOR</td>
                         <td>SP</td>
                         <td>Editar/Excluir</td>
-                    </tr>
-                    <tr>
+                    </tr> */}
+                    {/* <tr>
                         <td>2</td>
                         <td>Filme B</td>
                         <td>Regerkahfugfuqegieuqgr qerfgqeuirfgeguiqegr qugfruiqrugqug</td>
@@ -109,15 +112,15 @@ function App() {
                         <td>ADMINISTRADOR</td>
                         <td>SP</td>
                         <td>Editar/Excluir</td>
-                    </tr>
+                    </tr> */}
 
-                </tbody>
+                {/* </tbody>
 
             </table>
             </div>
     </section>        
     </main>
-  </section>
+  </section> */}
 
   </section>
       
