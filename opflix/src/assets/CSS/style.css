@@ -169,11 +169,12 @@ h3{
     font-size: 1.7em;
 }
 
-#contatos{
-    color: white;
-    font-size: 1.5em;
-}
-
-.rodape{
-    background-color: black;
+.tabela{
+    /* font-weight: lighter; */
+    /* border-collapse: collapse; */
+    /* text-align: left; */
+    /* table-layout: fixed; */
+    width: 55%;
+    /* white-space: nowrap; */
+    font-size: 16px; 
 }

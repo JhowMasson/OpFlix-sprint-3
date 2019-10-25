@@ -5,6 +5,7 @@ import './App.css';
 //import do CSS
 import '../../assets/CSS/style.css';
 import '../../assets/CSS/login.css';
+import '../../assets/CSS/rodape.css';
 
 //import da imagem
 import logo from  '../../assets/img/imagem-opflix.png';
@@ -54,74 +55,6 @@ function App() {
       <a class= "menu-design" href= "#">Quem Somos ?</a>
       <a class= "menu-design" href= "#">Contato</a>
     </nav>
-  </section>
-
-  <section className="menu-nav">
-
- 
-{/* 
-  <section className="fundo-tela">
-  <main class="conteudoPrincipal">
-    <section class="conteudoPrincipal-cadastro">
-        <h1 id= "titulo-section">Principais Lancamentos</h1>
-        <div class="container" id="conteudoPrincipal-lista">
-
-            <table id="tabela-lista">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Nome</th>
-                        <th>Sinopse</th>
-                        <th>Genero</th>
-                        <th>Categoria</th>
-                        <th>Tempo de Duração</th>
-                        <th>Data Lancamento</th>
-                        <th></th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Filme A</td>
-                        <td>Regerkahfugfuqegieuqgr qerfgqeuirfgeguiqegr qugfruiqrugqug</td>
-                        <td>ADMINISTRADOR</td>
-                        <td>SP</td>
-                        <td>Editar/Excluir</td>
-                    </tr> */}
-                    {/* <tr>
-                        <td>2</td>
-                        <td>Filme B</td>
-                        <td>Regerkahfugfuqegieuqgr qerfgqeuirfgeguiqegr qugfruiqrugqug</td>
-                        <td>COMUM</td>
-                        <td>SP</td>
-                        <td>Editar/Excluir</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Filme C</td>
-                        <td>Regerkahfugfuqegieuqgr qerfgqeuirfgeguiqegr qugfruiqrugqug</td>
-                        <td>ADMINISTRADOR</td>
-                        <td>SP</td>
-                        <td>Editar/Excluir</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Filme D</td>
-                        <td>Regerkahfugfuqegieuqgr qerfgqeuirfgeguiqegr qugfruiqrugqug</td>
-                        <td>ADMINISTRADOR</td>
-                        <td>SP</td>
-                        <td>Editar/Excluir</td>
-                    </tr> */}
-
-                {/* </tbody>
-
-            </table>
-            </div>
-    </section>        
-    </main>
-  </section> */}
-
   </section>
       
       <section id= "o-que-fazemos">

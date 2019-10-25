@@ -68,15 +68,16 @@ atualizarNome = (event) =>{
 
 render(){
     return(
-<table className="tabela">
+    <div>
+    <table className="tabela">
                 <thead>
                     <tr>
                         <th>#</th>
                         <th>Título</th>
-                        <th>Sinopse</th>
-                        <th>Tipo</th>
                         <th>Tempo de Duração</th>
                         <th>Data de Lançamento</th>
+                        <th>Sinopse</th>
+                        <th>Tipo</th>
                     </tr>
                 </thead>
 
@@ -96,25 +97,11 @@ render(){
                     })}
                 </tbody>
             </table> 
-    )
 
-
-
-
-
-
-
-
+            <Rodape />
+        </div>
+        )
     }
-
-
-
-
-
-
-
-
-
 }
 
 export default Lancamento;

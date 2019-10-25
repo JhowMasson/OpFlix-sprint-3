@@ -5,6 +5,7 @@ import logo from '../../assets/img/imagem-opflix.png';
 import {Link} from 'react-router-dom';
 import Axios from 'axios';
 
+
 class Login extends Component{
     constructor(){
         super();
@@ -47,18 +48,20 @@ class Login extends Component{
 
     render(){
         return(
+            
         <section className="login-usuario">
 
             <div className="item__login">
                 <div className="row">
                 <div className="item">
-                    <Link to="/"><img id="opfliximg" src={logo}/></Link>
+                    <Link to="/"><img id="login-img" src={logo}/></Link>
                 </div>
                 <div className="item" id="item__title">
                     <p id="introducao-login">
-                    Bem-vindo! Faça login para acessar sua conta.
+                    Bem-vindo! Faça o login para acessar sua conta.
                     </p>
                 </div>
+                <div id="estilo-login">
                 <form onSubmit={this.efetuarLogin}>
                     <div className="item-login">
                     <input
@@ -86,15 +89,17 @@ class Login extends Component{
                         id="login-senha"
                     />
                     </div>
-                    <div className="item">
-                    <button className="btn btn__login" id="btn__login">
+                    <div className="botao-login">
+                    <button className="btn_login">
                         Login
                     </button>
                     </div>
                 </form>
                 </div>
+                </div>
             </div>
             </section>
+
         );
     }
 
